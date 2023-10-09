@@ -1,0 +1,72 @@
+
+<style>
+    .button {
+        border-radius: 12px;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+    }
+    .buttonhigh {
+        background-color: #4CAF50;
+    }
+    .buttonmedium {
+        background-color: orange;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #dfe3eb;
+    }
+    .scanBtn:hover {
+        background-color: #bbb;
+    }
+    .bottom-btn {
+    font-size:20px; 
+    background-color:#9db0a5; 
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 77.5%;
+    padding:10px 40px;
+    transform: translateX(-50%);
+    float: none;
+  } 
+.bottom-btn:hover {
+    background-color: grey; 
+    color: white;
+}
+    .bottom-btn1 {
+    font-size:20px; 
+    background-color:#9db0a5; 
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 27.5%;
+    padding:10px 40px;
+    transform: translateX(-50%);
+    float: none;
+    } 
+    .bottom-btn1:hover {
+    background-color: grey; 
+    color: white;
+    }
+</style>
+<table><tr><th>Target:</th><th>http://testphp.vulnweb.com</th></tr>
+<tr><th>Server:</th><th>nginx/1.19.0</th></tr>
+<tr><th>Date:</th><th>Mon, 24 Apr 2023 06:35:58 GMT</th></tr>
+<tr><th>Powered:</th><th>PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1</th></tr></table>
+<br><br><table><tr><th>Sr.No</th><th>Vulnerability</th><th>Description</th><th>Risk</th></tr>
+<tr><td>1</td><td>Broken Access Control</td><td>http://testphp.vulnweb.com/admin is accessible<br> and may be vulnerable to broken access control</td><td><button class='button buttonhigh'>High</button></td></tr
+<tr><td>2</td><td>Cross-Site Scripting (XSS)</td><td>XSS vulnerability found in input field:searchFor</td><td><button class='button buttonhigh'>High</button></td></tr
+<tr><td>3</td><td>SQL Injection (SQLi)</td><td>SQLi vulnerability found in input field:searchFor</td><td><button class='button buttonhigh'>High</button></td></tr

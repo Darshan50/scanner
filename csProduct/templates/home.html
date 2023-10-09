@@ -1,0 +1,182 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Automated VAPT Scanner</title>
+
+<!-- icon link of satyamaev jayte icon -->
+<link rel = "icon" href = 
+
+"https://www.shutterstock.com/image-vector/satyamev-jayate-ashok-stambh-vector-600w-1978905338.jpg" 
+        type = "image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+    margin: 40;
+    min-width: 250px;
+    margin-top: 15px;
+    min-height: 80%;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    flex: 1;
+}
+
+.image {
+    flex: 1; 
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    float: left; 
+    margin-right: 50px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+    background-color: #99ccff;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+input {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    border: #000000;
+    border: solid;
+    margin-top: 12px;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+/* Style the "Scan" button */ 
+.scanBtn {
+    font-family: 'Poppins',sans-serif;
+    padding: 10px;
+    width: 25%;
+    margin-top: 12px;
+    background: #d9d9d9;
+    color: #555;
+    border: solid;
+    border-color: #000000;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.bottom-btn {
+    font-size:20px; 
+    background-color:#9db0a5; 
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 77.5%;
+    padding:10px 40px;
+    transform: translateX(-50%);
+    float: none;
+  } 
+.bottom-btn:hover {
+    background-color: grey; 
+    color: white;
+}
+
+.bottom-btn1 {
+    font-size:20px; 
+    background-color:#9db0a5; 
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 27.5%;
+    padding:10px 40px;
+    transform: translateX(-50%);
+    float: none;
+  } 
+.bottom-btn1:hover {
+    background-color: grey; 
+    color: white;
+}
+
+.scanBtn:hover {
+    background-color: #bbb;
+}
+
+</style>
+
+</head>
+<body>
+<div id="myDIV" class="header">
+    <!--<img class="header_logo" src="https://cdn.pixabay.com/photo/2012/04/10/23/03/india-26828__340.png" alt="Error in Image loading">-->
+    <h2 style="margin:5px">Start scanning your website in just 1 click</h2>
+    <form  method="post">
+        {% csrf_token %}
+        <input type="text" name="url" id="myInput" placeholder="Enter URL to scan...">
+        <button type="submit" class="scanBtn">Scan</button>
+    </form>
+</div>
+<div class="container">
+    <div class="content">
+        <p style="color:#6600ff">
+            Welcome to our vulnerability scanner!<br><br>
+            Advanced scanning technology helps you identify potential vulnerabilities and security 
+            flaws in your website or application quickly and easily. With just a click, you can run a 
+            comprehensive scan of your system and get instant report on any vulnerabilities that may 
+            exist.<br><br>
+            This scanner uses the latest security testing techniques and algorithms to ensure that you 
+            get the most accurate and reliable results possible. You can trust our tool to help you protect 
+            your systems and data from potential threats and attacks.<br><br>
+            Whether you're a small business owner, a developer, or a security professional, this scanner  
+            is the perfect tool to help you stay ahead of the curve and keep your systems secure.<br>
+            So start scanning today for your website!
+        </p>
+    </div>
+    <div class="image">
+        <img src="https://i.ibb.co/NTVGnVB/is27ycoo.jpg" alt="Error Loading Image">
+    </div>
+</div>
+
+<a class="bottom-btn1" href="{% url 'about' %}">About</a> 
+<a class="bottom-btn" href="{% url 'logout' %}">Logout</a>
+
+</body>
+</html>

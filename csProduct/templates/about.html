@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+
+ <!-- icon link of satyamaev jayte icon -->
+ <link rel = "icon" href = 
+
+ "https://www.shutterstock.com/image-vector/satyamev-jayate-ashok-stambh-vector-600w-1978905338.jpg" 
+         type = "image/x-icon">
+
+<style>
+body {
+  font-family: 'Poppins',sans-serif;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: #009900;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.tab1 {
+            tab-size: 10;
+        }
+  
+.bottom-btn {
+    font-size:20px; 
+    background-color:#9db0a5; 
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    padding:10px 40px;
+    transform: translateX(-50%);
+    float: none;
+  } 
+  
+.bottom-btn:hover {
+    background-color: grey; 
+    color: white;
+}
+.bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <img src="https://img.freepik.com/free-vector/computer-forensic-science-digital-evidence-analysis-cybercrime-investigation-data-recovering-cybersecurity-expert-identifying-fraudulent-activity-vector-isolated-concept-metaphor-illustration_335657-2827.jpg?size=626&ext=jpg"  alt="Error In Image Loading"  style="width:340px;height:340px;position: relative;">
+  </div>
+  <div class="bottom">
+    <a class="bottom-btn" href="{% url 'home' %}">Scan</a>
+  </div>
+</div>
+
+<div class="split right">
+  <h2 style="color:  #ffffff ;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Automated VAPT Scanner Tool</h2><br><br>
+  <p style="color: #99ccff">A vulnerability scanner is a software tool that scans computer systems or networks to identify security vulnerabilities. These vulnerabilities may include outdated software, missing patches, weak passwords, and misconfigured settings. Vulnerability scanners are an essential tool for organizations to proactively identify and remediate security risks before they can be exploited by attackers.</p>
+  <p style="color: #99ccff;">Some of the key features to look for in a vulnerability scanner include:</p>
+  <ul style="color: #99ccff">
+    <li>Automated scanning: A good vulnerability scanner should automate the scanning process, reducing the time and effort required to identify vulnerabilities.</li>
+    <br><li>Comprehensive coverage: The scanner should be able to detect vulnerabilities across all devices and endpoints, including servers, workstations, and mobile devices.</li>
+    <br><li>Accurate results: The scanner should provide accurate results, minimizing false positives and false negatives.</li>
+    <br><li>Prioritization: The scanner should prioritize vulnerabilities based on their severity, enabling organizations to focus their resources on fixing the most critical issues first.</li>
+    <br><li>Customization: The scanner should be customizable, allowing organizations to tailor the scanning process to their specific needs.</li>
+  </ul>
+  <p style="color: #99ccff;">Overall, a vulnerability scanner is an essential tool for any organization looking to improve its security posture and proactively identify and remediate vulnerabilities before they can be exploited by attackers.</p>       
+  <div class="bottom">
+    <a class="bottom-btn" href="{% url 'logout' %}">Logout</a>
+  </div>
+</div>
+
+</body>
+</html> 
